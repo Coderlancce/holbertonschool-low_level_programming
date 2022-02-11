@@ -15,12 +15,12 @@ int main(void)
 
 	for (number = 48; number < 58; number++)
 	{
-		putchar(number)
+		putchar(number);
 
 		if (number < 57)
 		{
 			putchar(coma);
-			putchar (space);
+			putchar(space);
 		}
 	}
 	putchar('\n');
