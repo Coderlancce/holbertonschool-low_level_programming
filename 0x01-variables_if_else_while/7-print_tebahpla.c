@@ -13,5 +13,6 @@ int main(void)
 	for (lowercase = 122; lowercase > 96; lowercase--)
 		putchar(lowercase);
 
+	putchar ('\n');
 	return (0);
 }
