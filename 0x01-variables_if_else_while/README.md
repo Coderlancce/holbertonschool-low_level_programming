@@ -1,0 +1,1 @@
+Start varibles if else, soon i added especific information of the tasks.
