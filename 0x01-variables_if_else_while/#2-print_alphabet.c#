@@ -3,7 +3,7 @@
 /**
  * main - the name of the function
  * while: conditional iteration
- * Return:The return its 0
+ * Return: The return its 0 
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	while (lowercase < 123)
 	{
-		putchar(lowercase);
+		putchar (lowercase);
 		lowercase++;
 	}
 	putchar('\n');
