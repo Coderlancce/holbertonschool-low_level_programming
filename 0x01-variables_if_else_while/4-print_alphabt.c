@@ -8,6 +8,8 @@
 
 int main(void)
 {
+	int lowercase;
+
 	for (lowercase = 97; lowercase < 123 ; lowercase++)
 	{
 		if (lowercase != 113 && lowercase != 101)
