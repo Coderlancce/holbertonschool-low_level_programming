@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - name of the function
+ * print_alphabet - name of the function
  * for: cicle of print alphabet
  * Return: Always 0
  */
