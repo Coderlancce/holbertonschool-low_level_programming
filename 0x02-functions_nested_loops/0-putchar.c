@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - name of the fuction
+ * _putcchar - name of the fuction
  * Return: 0
  */
 
-int main(void)
+int _putchar(void)
 {
 	char c[] = "_putchar";
 	int i = 0;
