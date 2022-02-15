@@ -7,7 +7,7 @@
  * Return: short if else
  */
 
-int _abs(int r);
+int _abs(int r)
 {
 	return ((r < 0) ? -r : r);
 }
