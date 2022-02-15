@@ -3,6 +3,7 @@
 
 /**
  * print_sign - name of the function
+ * @n: value of ingrase
  * if_and_else: conditional for print
  * Return: -1, 1 or 0
  */
@@ -11,7 +12,7 @@ int print_sign(int n)
 {
 	int mas = 43;
 	int menos = 45;
-  
+
 	if (n < 0)
 	{
 		_putchar(menos);
