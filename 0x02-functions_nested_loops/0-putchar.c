@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - name of the fuction
+ * _putchar - name of the fuction
  * Return: 0
  */
 
