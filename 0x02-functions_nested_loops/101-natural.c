@@ -3,7 +3,7 @@
 
 /**
  * main - name of the function
- * Return: none
+ * Return: always 0
  */
 
 int main(void)
@@ -23,4 +23,5 @@ int main(void)
 	_putchar(((sum / 100) % 10) + '0');
 	_putchar(((sum / 10) % 10) + '0');
 	_putchar((sum % 10) + '0');
+	return (0);
 }
