@@ -3,6 +3,7 @@
 
 /**
  * _islower - name of the function
+ * @c: value of ingrese
  * if: conditional for print
  * Return: 1 if and 0 else
  */
