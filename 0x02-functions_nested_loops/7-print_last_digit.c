@@ -8,7 +8,8 @@
 
 int print_last_digit(int r)
 {
-  return(_abs(r % 10));
+	_putchar(_abs(r % 10) + '0');
+	return(_abs(r % 10));
 }
 
 /**
@@ -18,5 +19,5 @@ int print_last_digit(int r)
 
 int _abs(int n)
 {
-  return ((n < 0) ? -n : n);
+	return ((n < 0) ? -n : n);
 }
