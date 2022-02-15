@@ -25,7 +25,7 @@ int main(void)
 		count++;
 	}
 	sum = one + two;
-	printf ("%li\n", sum);
+	printf("%li\n", sum);
 
 	return (0);
 }
