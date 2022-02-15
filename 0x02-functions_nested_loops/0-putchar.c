@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * _putcchar - name of the fuction
+ * main - name of the fuction
  * Return: 0
  */
 
-int _putchar(void)
+int main(void)
 {
-	char c[] = "_putchar";
+	char c[8] = "_putchar";
 	int i = 0;
 
 	while (c[i] != '\0')
