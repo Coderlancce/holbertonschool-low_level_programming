@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- *
- *
+ * main - name of the function
+ * Return: none
  */
 
 int main(void)
