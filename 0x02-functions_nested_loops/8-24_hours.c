@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- *
- *
+ * jack_bauer - name of the function
+ * while: cicle of time in hours and minutes
  */
 
 void jack_bauer(void)
