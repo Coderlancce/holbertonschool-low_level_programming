@@ -13,13 +13,13 @@ void print_line(int n)
 
 	if (n > 0)
 	{
-		while (c <= n)
+		while (c < n)
 		{
 			_putchar ('_');
 			c++;
 		}
 		_putchar ('\n');
-		}
-		else
-			_putchar('\n');
+	}
+	else
+		_putchar('\n');
 }
