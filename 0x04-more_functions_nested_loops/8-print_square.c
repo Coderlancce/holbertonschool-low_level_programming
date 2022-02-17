@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_aquare - name of the function
+ * print_square - name of the function
  * @size: value of ingrese
  * Return: none
  */
