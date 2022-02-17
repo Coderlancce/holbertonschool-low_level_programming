@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isupper - name of the function 
+ * _isupper - name of the function
  * @c: value of ingrese
  * Return: 1 if true and 0 is false
  */
