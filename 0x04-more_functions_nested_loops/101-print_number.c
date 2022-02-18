@@ -4,6 +4,7 @@
 /**
  * print_number - name of the function
  * if: conditional print
+ * @n: value of ingrese
  * Return: none
  */
 
@@ -16,7 +17,7 @@ void print_number(int n)
 		_putchar(((n / 10) % 10) + '0');
 		_putchar((n % 10) + '0');
 	}
-	else if(n < 0)
+	else if (n < 0)
 	{
 		_putchar('-');
 		_putchar(((-n / 10) % 10) + '0');
