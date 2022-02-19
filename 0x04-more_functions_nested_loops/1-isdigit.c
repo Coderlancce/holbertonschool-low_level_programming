@@ -4,7 +4,7 @@
 /**
  * _isdigit - name of the function
  * @c: value of ingrese
- * Return: 0 if is a number, 1 if is otherwise
+ * Return: 1 if is a number, 0 if is otherwise
  */
 
 int _isdigit(int c)
