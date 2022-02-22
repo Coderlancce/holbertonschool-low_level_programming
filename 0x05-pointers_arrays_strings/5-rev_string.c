@@ -4,22 +4,23 @@
 /**
  * rev_string - name of the function
  * @s: pointer of ingrese
- * Return: value of string in the actual position
+ * Return: none
  */
 
 void rev_string(char *s)
 {
-	int a = 0;
+	int a = 0, b = 0, m;
 
+	
 	while (s[a] != '\0')
 		a++;
 
 	a--;
 
-	while (s[a] >= 0)
+	while (a > 0)
 	{
-		return (s[a]);
-		a--;
+		m = s[a];
+		s[a--] = s[b];
+		s[b++] = m;
 	}
-	_putchar('\n');
 }
