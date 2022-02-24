@@ -18,7 +18,10 @@ char *rot13(char *a)
 		for (c = 0; c <= 51; c++)
 		{
 			if (a[b] == value[c])
+			{
 				a[b] = ret[c];
+				break;
+			}
 		}
 	}
 	return (a);
