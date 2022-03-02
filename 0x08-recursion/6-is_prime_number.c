@@ -20,11 +20,11 @@ int is_prime_number(int n)
 
 int cal_prim(int a, int n)
 {
-	if (n <= 1 || (n != a && n % a == 0)
+	if (n <= 1 || (n != a && n % a == 0))
 		return (0);
 
 	if (n == a)
 		return (1);
 
-	return (cal_prim(a + 1, n)
+	return (cal_prim(a + 1, n);
 }
