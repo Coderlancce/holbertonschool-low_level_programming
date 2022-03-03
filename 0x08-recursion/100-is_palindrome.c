@@ -18,7 +18,7 @@ int is_palindrome(char *s)
  * compare - name of the function
  * @s: pointer to array
  * @l: countter
- * Return: compare and return 1 or 0 
+ * Return: compare and return 1 or 0
  */
 
 int compare(char *s, int l)
@@ -28,7 +28,7 @@ int compare(char *s, int l)
 
 	if (*s == *(s + (l - 1)))
 		return (compare(s + 1, l - 2));
-	
+
 	return (0);
 }
 
@@ -42,6 +42,6 @@ int length(char *s)
 {
 	if (*s != '\0')
 		return (1 + length(s + 1));
-	
+
 	return (0);
 }
