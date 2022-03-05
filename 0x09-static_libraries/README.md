@@ -1,0 +1,1 @@
+static libreries, soon more info 
