@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
+ * _calloc - name of the function
+ * @nmemb: size of bytes to modific
+ * @size: size of datatype
+ * Return: new value or in fail null
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
