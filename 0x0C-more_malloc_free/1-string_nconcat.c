@@ -14,23 +14,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int str2 = 0;
 	unsigned int i;
 
-	if (s1 != NULL)
+	if (s1)
 	{
 		for (; s1[str1]; str1++)
 			;
 	}
-	if (s2 != NULL)
+	if (s2)
 	{
 		for (; s2[str2]; str2++)
 			;
 	}
-	if (cs2 > n)
+	if (str2 > n)
 		str2 = n;
 
 	s = malloc(sizeof(char) * (str1 + str2 + 1));
 
-	if (s == NULL)
-		return (NULL);
+	if (!s)
+		return ('\0');
 
 	for (i = 0; i < str1; i++)
 		s[i] = s1[i];
