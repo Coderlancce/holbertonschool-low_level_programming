@@ -4,6 +4,7 @@
  * string_nconcat - name of the function
  * @s1: pointer to str1
  * @s2: pointer to str2
+ * @n: number cort size od s2
  * Return: concat strings
  */
 
