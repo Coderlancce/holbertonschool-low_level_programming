@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * strcpy - name of the function
+ * cpystr - name of the function
  * @s1: pointer to clear table
  * @s2: pointer to white table
  * Return: s1 with information s2
