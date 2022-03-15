@@ -7,7 +7,7 @@
  * Return: s1 with information s2
  */
 
-char *strcpy(char *s1, char *s2)
+char *cpystr(char *s1, char *s2)
 {
 	int i;
 
@@ -68,9 +68,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog2);
 		return (NULL);
 	}
-	dog2->name = strcpy(dog2->name, name);
+	dog2->name = cpystr(dog2->name, name);
 	dog2->age = age;
-	dog2->owner = strcpy(dog2->owner, owner);
+	dog2->owner = cpystr(dog2->owner, owner);
 
 	return (dog2);
 }
