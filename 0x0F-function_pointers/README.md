@@ -1,0 +1,1 @@
+Start functions pointers, soon more info
