@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
+ * print_list - function to print elements of the linked list
+ * @h: pointer header to linked list
  *
- *
+ * Return: information in linked list
  */
 
 size_t print_list(const list_t *h)
