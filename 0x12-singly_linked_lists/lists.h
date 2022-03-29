@@ -14,13 +14,11 @@
  * Description: singly linked list node structure
  */
 
-typedef struct list_s *listPtr;
-
 typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	listPtr next;
+	struct listPtr *next;
 } list_t;
 
 size_t print_list(const list_t *h);
