@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 
-	for(; h; count++)
+	for (; h; count++)
 	{
 		if (h->str)
 			printf("[%d] %s\n", h->len, h->str);
