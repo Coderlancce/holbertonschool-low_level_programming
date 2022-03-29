@@ -11,7 +11,7 @@ int _strlen(const char *str)
 {
 	int count = 0;
 
-	for(; str[count]; count++)
+	for (; str[count]; count++)
 		;
 	return (count);
 }
