@@ -9,11 +9,9 @@
 
 void free_list(list_t *head)
 {
-	for (; head;)
-	{
-		if (head->str)
-			free(head->str);
-		free(head);
-		head = head->next;
-	}
+	if (head->str)
+		free(head->str);
+	if (head->next)
+		free_list(head->next);
+	free(head);
 }
