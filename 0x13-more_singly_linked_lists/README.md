@@ -1,0 +1,1 @@
+Here start more concepts of linked list :), soon more info.
