@@ -6,7 +6,7 @@
 
 /**
  * struct listint_s - singly linked list of integrers
- * @i: integrer
+ * @n: integrer
  * @next: pointer to next node
  *
  * Description: singly linked list node structure
