@@ -11,9 +11,9 @@ size_t print_listint(const listint_t *h)
 {
 	size_t nnodes = 0;
 
-	for(; h; nmodes++)
+	for(; h; nnodes++)
 	{
-		printf("%d\n", h->i);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
 	return (nnodes);
