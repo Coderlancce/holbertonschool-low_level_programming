@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	int add = 0;
 
-	if (index > 20)
+	if (index > 31)
 		return (-1);
 	add = 1 << index;
 	*n = *n | add;
