@@ -12,7 +12,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 {
 	int add;
 
-	if (index > 12)
+	if (index > 15)
 		return (-1);
 	add = 1 << index;
 	*n = *n & (~add);
