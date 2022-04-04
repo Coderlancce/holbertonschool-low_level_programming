@@ -1,0 +1,1 @@
+Bit manupulation, soon more info
