@@ -4,7 +4,7 @@
  * print_binary - convert decimal in binary
  * @n: decimal number
  *
- * Return: when state in last digit return and 
+ * Return: when state in last digit return and
  * start to close function
  */
 
