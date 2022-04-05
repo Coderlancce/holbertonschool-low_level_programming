@@ -5,7 +5,7 @@
  * @filename: resource to read
  * @letters: number of characters to read
  *
- * Return: what read the function or 0 if some error 
+ * Return: what read the function or 0 if some error
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	new_write = write(STDOUT_FILENO, s, letters)
 	if (new_write == -1)
 	{
-		free (s);
+		free(s);
 		return (0);
 	}
 	close(fd);
