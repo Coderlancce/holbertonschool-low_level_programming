@@ -3,37 +3,36 @@
 
 /**
  * print_number - name of the function
- * if: conditional print
  * @n: value of ingrese
  * Return: none
  */
 
 void print_number(int n)
 {
-	if (n / 1000 != 0)
+	int number;
+	unsigned int positive, size_d, obs_size_d = 1, store = 0;
+
+	number = n;
+
+	if (number < 0)
 	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		_putchar(((-n / 10) % 10) + '0');
-		_putchar((-n % 10) + '0');
-	}
-	else if (n / 100 != 0)
-	{
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n / 10 != 0)
-	{
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
+		store = store + _putchar('-');
+		positive = number * -1;
 	}
 	else
-		_putchar((n % 10) + '0');
+		positive = number;
+
+	size_d = positive;
+	while (size_d > 9)
+	{
+		size_d = size_d / 10;
+		obs_size_d = obs_size_d * 10;
+	}
+	while (obs_size_d >= 1)
+	{
+		store = store + _putchar(((positive / obs_size_d) % 10) + '0');
+		obs_size_d = obs_size_d / 10;
+	}
+
+	return (0);
 }
