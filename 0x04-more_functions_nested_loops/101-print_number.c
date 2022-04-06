@@ -33,6 +33,4 @@ void print_number(int n)
 		store = store + _putchar(((positive / obs_size_d) % 10) + '0');
 		obs_size_d = obs_size_d / 10;
 	}
-
-	return (0);
 }
