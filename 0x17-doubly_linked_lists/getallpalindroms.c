@@ -23,7 +23,8 @@ int main()
 						if(ans > res)
 						{
 							res = ans;
-							if((ans / 1000) % 10 == (ans / 100) % 10)
+							p /= 10;
+							if((ans / p) % 10 == (ans / 100) % 10)
 								printf("%d * %d = %lld\n", i, j, ans);
 						}
 					}
