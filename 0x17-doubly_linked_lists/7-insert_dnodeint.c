@@ -6,7 +6,7 @@
  * @idx: position to insert
  * @n: data to new node
  *
- * Return:
+ * Return: the node temporal insert
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -16,7 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 1;
 
 	new_node = malloc(sizeof(dlistint_t));
-	if(new_node == NULL)
+	if (new_node == NULL)
 		return (NULL);
 	new_node->n = n;
 	for (; idx > i; i++)
