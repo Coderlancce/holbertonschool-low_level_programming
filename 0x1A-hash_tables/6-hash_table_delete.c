@@ -19,12 +19,12 @@ int free_content_hash_table(hash_table_t *ht, unsigned long index)
 	current = ht->array[index];
 	for (; current; current = after)
 	{
- 		after = current->next;
-      		free(current->value), free(current->key);
-      		free(current);
-    	}
+		after = current->next;
+		free(current->value), free(current->key);
+		free(current);
+	}
 
-  	return (1);
+	return (1);
 }
 
 
@@ -43,7 +43,7 @@ void hash_table_delete(hash_table_t *ht)
 	if (!ht)
 		return;
 
-	for(; i < ht->size; i++)
+	for (; i < ht->size; i++)
 		if (ht->array[i])
 			free_content_hash_table(ht, i);
 
