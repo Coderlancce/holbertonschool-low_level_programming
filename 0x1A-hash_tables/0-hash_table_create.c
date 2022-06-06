@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	buffer = calloc(size, sizeof(hash_node_t *));
 	if (!buffer)
 	{
-		free (hasht);
+		free(hasht);
 		return (NULL);
 	}
 
