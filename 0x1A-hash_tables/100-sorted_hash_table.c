@@ -43,13 +43,15 @@ shash_table_t *shash_table_create(unsigned long int size)
  * Return: pointer table with the created node, NULL on frailure
  */
 
-shash_node_t *add_nde_shash(shash_node_t **ht, const char *key, const char *value)
+shash_node_t *add_nde_shash(shash_node_t **ht,
+			    const char *key,
+			    const char *value)
 {
 	shash_node_t *tmp;
 
 	tmp = *ht;
 
-	for (;tmp; tmp = tmp->next)
+	for (; tmp; tmp = tmp->next)
 	{
 		if (strcmp(key, tmp->key) == 0)
 		{
@@ -88,7 +90,7 @@ void add_ind_shash(shash_table_t *ht, shash_node_t *new)
 
 	tmp1 = tmp2 = ht->shead;
 
-	for(; tmp1; tmp2 = tmp1, tmp1 = tmp1-> snext)
+	for (; tmp1; tmp2 = tmp1, tmp1 = tmp1->snext)
 	{
 		ret = strcmp(new->key, tmp1->key);
 		if (ret == 0)
@@ -199,7 +201,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 
 	tmp = ht->stail;
 
-	for (;tmp; tmp = tmp->sprev)
+	for (; tmp; tmp = tmp->sprev)
 	{
 		printf("%s'%s': '%s'", sep, tmp->key, tmp->value);
 		sep = ", ";
