@@ -7,7 +7,7 @@
  * @array: is a pointer to the first element of the array to search in.
  * @size: is the number of elements in "array".
  * @value: value to search for.
- * 
+ *
  * Return: index where 'value' is located,
  * -1 if 'value' is not present int 'array',
  * -1 if array is NULL.
@@ -17,6 +17,7 @@ int interpolation_search(int *array, size_t size, int value)
 {
 	int low = 0, high = 0;
 	size_t pos = 0;
+
 	high = size - 1;
 
 	if (!array)
@@ -37,10 +38,9 @@ int interpolation_search(int *array, size_t size, int value)
 
 		if (array[pos] < value)
 			low++;
-
 		else if (array[pos] > value)
 			low--;
 		}
-	
+
 		return (pos);
 }
