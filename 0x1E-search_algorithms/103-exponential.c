@@ -28,7 +28,7 @@ int searching(int *array, size_t aux, int value, size_t i)
 	printf("%d\n", array[i]);
 
 	if (array[save + save2] == value)
-		return(save + save2);
+		return (save + save2);
 
 	if (array[save + save2] < value && save + save2 <= aux)
 		return (searching(array, aux, value, save + save2));
@@ -37,7 +37,8 @@ int searching(int *array, size_t aux, int value, size_t i)
 }
 
 /**
- * exponential_search -  a function that searches for a value in a sorted array of integers using the Exponential search algorithm
+ * exponential_search - a function that searches for a value
+ * in a sorted array of integers using the Exponential search algorithm
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
@@ -56,15 +57,14 @@ int exponential_search(int *array, size_t size, int value)
 	for (i = 1; i <= size; i *= 2, aux = i)
 	{
 		if (i >= size)
-			aux = size -1;
+			aux = size - 1;
 
 		if (array[aux] >= value || array[aux] == array[size - 1])
 		{
-			printf("Value found between indexes [%ld] and [%ld]\n", i / 2, aux );
+			printf("Value found between indexes [%ld] and [%ld]\n", i / 2, aux);
 			return (searching(array, aux, value, i / 2));
 		}
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
- 	}
-
+	}
 	return (-1);
 }
